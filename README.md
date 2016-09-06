@@ -54,8 +54,8 @@ sudo add-apt-repository -y ppa:securityonion/stable
 sudo apt-get update  
 sudo apt-get -y install securityonion-all syslog-ng-core  
 Now setup SecurityOnion as a standalone server.  
-	- You can now run PCAPs against the monitor interface and have Bro and Suricata run against them.
-	- Install all of your custom Bro scripts
+	- You can now run PCAPs against the monitor interface and have Bro and Suricata run against them.  
+	- Install all of your custom Bro scripts  
 	- View the results of the PCAP replay in Sguil and ELSA.  
 Source: https://github.com/Security-Onion-Solutions/security-onion/wiki/InstallingOnUbuntu  
 
