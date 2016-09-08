@@ -68,8 +68,6 @@ sudo apt-get install python-libemu
 update-sift  
 update-remnux  
 
-Pasted from <https://digital-forensics.sans.org/blog/2015/06/13/how-to-install-sift-workstation-and-remnux-on-the-same-forensics-system>   
-
 
 **If you have any APT keys that need added run the below command.**  
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys KEY  
