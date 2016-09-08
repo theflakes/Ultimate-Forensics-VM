@@ -61,7 +61,7 @@ Source: https://github.com/Security-Onion-Solutions/security-onion/wiki/Installi
 
 
 **Install Libemu**  
-udo apt-get install python-libemu  
+sudo apt-get install python-libemu  
 
 
 **Update SIFT and Remnux:**  
