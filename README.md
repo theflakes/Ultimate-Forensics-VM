@@ -43,7 +43,7 @@ sudo apt-get upgrade
 ***Run JSDetox:***  
 docker run  
 sudo docker run --rm -p 3000:3000 remnux/jsdetox  
-To stop JSDetox, use "sudo docker ps -l" to obtain the container ID, then use the "sudo docker stop *container-id*" and wait about a minute.  
+To stop JSDetox --> use "sudo docker ps -l" to obtain the container ID, then use the "sudo docker stop *container-id*" and wait about a minute.  
 Source: https://hub.docker.com/r/remnux/jsdetox/  
 
 
