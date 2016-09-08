@@ -60,6 +60,10 @@ Now setup SecurityOnion as a standalone server.
 Source: https://github.com/Security-Onion-Solutions/security-onion/wiki/InstallingOnUbuntu  
 
 
+**Install Libemu**  
+udo apt-get install python-libemu  
+
+
 **Update SIFT and Remnux:**  
 update-sift  
 update-remnux  
