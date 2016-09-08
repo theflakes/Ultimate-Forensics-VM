@@ -9,8 +9,8 @@ Evolving directions on building the best Open Source Forensics VM
 - 2 NICs  
   - One shared or direct connect  
   - One host only  
-  - Use this NIC for the SO monitor interface  
-  - Replay your PCAPs on this interface  
+      - Use this NIC for the SO monitor interface  
+      - Replay your PCAPs on this interface  
 
 
 **Install Ubuntu 14.04 LTS and run:**  
