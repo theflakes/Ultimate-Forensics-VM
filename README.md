@@ -60,8 +60,29 @@ Now setup SecurityOnion as a standalone server.
 Source: https://github.com/Security-Onion-Solutions/security-onion/wiki/InstallingOnUbuntu  
 
 
-**Install Libemu**  
+**Install Libemu:**  
 sudo apt-get install python-libemu  
+
+
+**Install YARA rules:** 
+https://github.com/Yara-Rules/rules  
+mkdir yara  
+cd yara  
+git clone https://github.com/Yara-Rules/rules.git  
+**Update to lates YARA version and enable various support:**  
+Download latest version of Yara  
+tar -xzf yara-3.X.0.tar.gz   
+cd yara-3.4.0/  
+./bootstrap.sh  
+sudo apt-get install libjansson-dev  
+./configure --with-crypto --enable-cuckoo --enable-magic  
+make  
+sudo make install  
+cd yara-python/  
+python setup.py build  
+sudo python setup.py install  
+yara -v  
+**more work to do here, not sure if this is the best way forward
 
 
 **Update SIFT and Remnux:**  
