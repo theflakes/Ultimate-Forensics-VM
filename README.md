@@ -69,7 +69,7 @@ https://github.com/Yara-Rules/rules
 mkdir yara  
 cd yara  
 git clone https://github.com/Yara-Rules/rules.git  
-**Update to lates YARA version and enable various support:**  
+**Update to latest YARA version and enable various support:**  
 Download latest version of Yara  
 tar -xzf yara-3.X.0.tar.gz   
 cd yara-3.4.0/  
