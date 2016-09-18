@@ -92,3 +92,8 @@ update-remnux
 
 **If you have any APT keys that need added run the below command.**  
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys KEY  
+
+
+**Reset ELSA DB**
+(good to do before starting a new investigation)
+securityonion-elsa-reset
