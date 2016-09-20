@@ -1,3 +1,6 @@
+***Had issues with APT updates breaking and I don't feel like messing with APT problems.  Therefore I am attempting to move to a Docker based forensics VM.  See the docker directory for more information.***  
+The below may still work but I don't feel like troubleshooting the APT conflicts.
+
 # Ultimate-Forensics-VM
 Evolving directions on building the best Open Source Forensics VM
 
