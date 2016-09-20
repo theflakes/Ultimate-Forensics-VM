@@ -47,8 +47,8 @@ nikto
 pytsk3  
 rar  
 regripper  
-unrar
-wine
+unrar  
+wine  
 
 
 **Build SecurityOnion**
