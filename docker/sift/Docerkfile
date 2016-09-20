@@ -18,6 +18,7 @@ ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
 # install sift
+RUN apt-get update && apt-get install -y apt-transport-https
 RUN apt-get install wget
 RUN wget --quiet -O - https://raw.github.com/sans-dfir/sift-bootstrap/master/bootstrap.sh | sudo bash -s -- -i
 
