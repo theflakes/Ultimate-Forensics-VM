@@ -1,6 +1,6 @@
 **Preperation**  
 Install LUbuntu latest version  
-(I want a low resource host, therefore I chose LUbuntu)
+(I want a low resource host, therefore I chose LUbuntu)  
 apt-get install docker  
 apt-get install docker.io  
 
