@@ -31,7 +31,7 @@ docker pull ubuntu:14.04
 cd /home/docker/remnux   
 docker build -t remnux .  
 ```
-_Remnux Install failures_:  
+_Remnux package install failures_:  
 inetsim  
 unrar  
 
@@ -41,13 +41,23 @@ unrar
 cd /home/docker/sift  
 docker build -t sift .  
 ```
+_Sift package install failures_:  
+mantaray  
+nikto  
+pytsk3  
+rar  
+regripper  
+unrar
+wine
 
 
 **Build SecurityOnion**
-``` bash
+```bash
 cd /home/docker/remnux/sonion  
 docker build -t sonion .  
 ```
+_SecurityOnion package install failures_:  
+
 
 Use "```service ssh start```" to start sshd and then ssh to the IP of the docker container.  
-Refer to Dockerfile for each image to find the SSH password.  
+Refer to the Dockerfile for each image to find the SSH password.  
