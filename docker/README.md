@@ -5,6 +5,7 @@ Install LUbuntu latest version
 ```bash
 apt-get install docker  
 apt-get install docker.io  
+# update docker to auto start
 sudo update-rc.d docker defaults  
 ```
 
