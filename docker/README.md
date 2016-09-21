@@ -11,10 +11,11 @@ sudo update-rc.d docker defaults
 
 **Docker images to pull**  
 ```
+# Javascript deobfuscation and analysis
 docker pull blacktop/jsdetox  
-docker pull ubuntu:14.04
+# needed to create forensics docker images  
+docker pull ubuntu:14.04  
 ```
-(needed to create forensics docker images)  
 
 
 **Create a directory to share with all Dockers**  
