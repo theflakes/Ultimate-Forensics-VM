@@ -27,6 +27,7 @@ docker pull ubuntu:14.04
 /home/docker/sonion/Dockerfile  
 /home/docker/remnux/Dockerfile  
 /home/docker/sift/Dockerfile  
+/home/docker/powershell/Dockerfile  
 
 
 **Build REMNUX**  
@@ -56,10 +57,23 @@ wine
 
 **Build SecurityOnion**
 ```bash
-cd /home/docker/remnux/sonion  
+cd /home/docker/sonion  
 docker build -t sonion .  
 ```
 _SecurityOnion package install failures_:  
+
+
+**Build Powershell**  
+https://channel9.msdn.com/Shows/msftazure/Run-PowerShell-Natively-on-Linux-with-Docker
+```bash
+cd /home/docker/powershell
+docker build -t pshell .  
+# start pshell docker
+# -i -> interactive docker
+# -t -> connect docker to terminal
+# --rm -> role back to the pre-run state of the docker after it is shutdown
+docker run -i -t --rm pshell
+```
 
 
 Use "```service ssh start```" to start sshd and then ssh to the IP of the docker container.  
