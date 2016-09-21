@@ -5,6 +5,7 @@ Install LUbuntu latest version
 ```bash
 apt-get install docker  
 apt-get install docker.io  
+sudo update-rc.d docker defaults  
 ```
 
 **Docker images to pull**  
