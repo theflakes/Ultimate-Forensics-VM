@@ -10,7 +10,7 @@ sudo update-rc.d docker defaults
 ```
 
 **Docker images to pull**  
-```
+```bash
 # Javascript deobfuscation and analysis
 docker pull blacktop/jsdetox  
 # needed to create forensics docker images  
