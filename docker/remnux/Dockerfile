@@ -6,6 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
 RUN apt-get upgrade -y
+RUN apt-get clean
 
 # install SSH server and setup SSH for docker
 # https://docs.docker.com/engine/examples/running_ssh_service/
@@ -20,6 +21,7 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 # install remnux
 RUN apt-get update && apt-get install -y apt-transport-https
 RUN apt-get install wget -y
+RUN apt-get clean
 RUN wget --quiet -O - https://remnux.org/get-remnux.sh | sudo bash
 
 VOLUME /tmp
