@@ -7,6 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # check for updates
 RUN apt-get update
 RUN apt-get upgrade -y
+RUN apt-get clean
 
 # install SSH server and setup SSH for docker
 # https://docs.docker.com/engine/examples/running_ssh_service/
@@ -24,9 +25,11 @@ RUN echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-sel
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get update
 RUN apt-get -y install software-properties-common
+RUN apt-get clean
 RUN add-apt-repository -y ppa:securityonion/stable
 RUN apt-get update
 RUN apt-get -y install securityonion-all syslog-ng-core
+RUN apt-get clean
 
 VOLUME /tmp
 VOLUME /data
