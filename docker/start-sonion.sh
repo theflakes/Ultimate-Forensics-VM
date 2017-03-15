@@ -17,4 +17,6 @@ docker run -it --rm -e DISPLAY=$DISPLAY \
         --device /dev/dri \
         --group-add audio \
         --group-add video \
-	      sonion 
+	--entrypoint /bin/bash \
+	--user sonion
+	sonion 
