@@ -62,6 +62,12 @@ docker build -t sonion .
 ```
 _SecurityOnion package install failures_:  
 
+**Run Dockers as non-root**
+```sudo groupadd docker
+sudo gpasswd -a ${USER} docker
+sudo service docker restart
+sudo reboot
+```
 
 **Build Powershell**  
 https://channel9.msdn.com/Shows/msftazure/Run-PowerShell-Natively-on-Linux-with-Docker
