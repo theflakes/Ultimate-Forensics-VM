@@ -42,9 +42,6 @@ RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 RUN apt-get install -y firefox
 RUN echo 2 | update-alternatives --config x-www-browser 
 
-USER sonion
-WORKDIR /home/sonion
-
 VOLUME /tmp
 VOLUME /data
 
