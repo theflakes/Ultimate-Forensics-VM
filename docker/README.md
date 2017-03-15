@@ -59,6 +59,20 @@ wine
 ```bash
 cd /home/docker/sonion  
 docker build -t sonion .  
+
+# Now start SO docker to customize it
+./start-sonion.sh
+# Do your customizations as dockers reset to their initial state unless commited
+# open another terminal to commit the customized image
+# get the container ID of the running SO docker image
+docker ps -a
+docker commit <container ID> <new image name>
+# now you should see a new image with the name you gave it in the step above
+docker images
+# exit the original image that is running to stop it
+# change the sonion name in the start-sonion.sh script to the name of your new SO image
+# now use the new image for all your SO work
+
 ```
 _SecurityOnion package install failures_:  
 
