@@ -30,6 +30,19 @@ RUN add-apt-repository -y ppa:securityonion/stable
 RUN apt-get update
 RUN apt-get -y install securityonion-all syslog-ng-core
 RUN apt-get clean
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get clean
+
+RUN useradd -ms /bin/bash sonion
+RUN echo 'sonion:sonion' | chpasswd
+RUN adduser sonion sudo
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+USER sonion
+WORKDIR /home/sonion
+
+RUN apt-get install -y firefox
+RUN echo 2 | update-alternatives --config x-www-browser 
 
 VOLUME /tmp
 VOLUME /data
