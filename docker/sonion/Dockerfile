@@ -38,11 +38,12 @@ RUN useradd -ms /bin/bash sonion
 RUN echo 'sonion:sonion' | chpasswd
 RUN adduser sonion sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-USER sonion
-WORKDIR /home/sonion
 
 RUN apt-get install -y firefox
 RUN echo 2 | update-alternatives --config x-www-browser 
+
+USER sonion
+WORKDIR /home/sonion
 
 VOLUME /tmp
 VOLUME /data
