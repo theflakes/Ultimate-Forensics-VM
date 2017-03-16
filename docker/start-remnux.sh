@@ -3,4 +3,7 @@
 # start Remnux docker and allow GUI applications to display
 
 xhost +local:docker
-docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix remnux
+docker run -ti --rm -e DISPLAY=$DISPLAY \
+	-v /tmp/.X11-unix/:/tmp/.X11-unix \
+	--entrypoint /bin/bash \
+	remnux
