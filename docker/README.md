@@ -4,8 +4,7 @@ Install LUbuntu latest version
 
 OR
 
-Use Qubes OS and the debian-9 template.  <-- DO THIS :)
-https://www.qubes-os.org/
+Use Qubes OS and the debian-9 template.  <-- DO THIS :) --> https://www.qubes-os.org/
 
 
 ***Now install Docker stuff for LUbuntu***  
