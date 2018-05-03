@@ -28,7 +28,7 @@ usermod -a -G docker $USER
 ```
 
 
-***add user to docker group to grant docket admin privs***
+***add user to docker group to grant docker admin privs***
 ```
 usermod -a -G docker $USER
 ```
