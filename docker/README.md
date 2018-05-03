@@ -1,13 +1,37 @@
 **Preperation**  
 Install LUbuntu latest version  
 (I want a low resource host, therefore I chose LUbuntu)  
-***Now install Docker stuff***  
+
+OR
+
+Use Qubes OS and the debian-9 template.  <-- DO THIS :)
+https://www.qubes-os.org/
+
+
+***Now install Docker stuff for LUbuntu***  
 ```bash
 apt-get install docker  
 apt-get install docker.io  
 # update docker to auto start
 sudo update-rc.d docker defaults  
 ```
+
+
+***Install Docker on Qubes debian-9 template***
+```
+apt-get install apt-transport-https dirmngr
+echo 'deb https://apt.dockerproject.org/repo debian-stretch main' >> /etc/apt/sources.list
+apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+apt-get update
+apt-get install docker-engine
+```
+
+
+***add user to docker group to grant docket admin privs***
+```
+usermod -a -G docker $USER
+```
+
 
 **Docker images to pull**  
 ```bash
