@@ -24,12 +24,13 @@ apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E8
 apt-get update
 apt-get install docker-engine
 # lets have docker start on boot
-usermod -a -G docker $USER
+update-rc.d docker defaults
 ```
 
 
 ***add user to docker group to grant docker admin privs***
 ```
+# best to reboot after running this command, at least log off and back on
 usermod -a -G docker $USER
 ```
 
