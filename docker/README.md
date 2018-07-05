@@ -41,6 +41,8 @@ usermod -a -G docker $USER
 docker pull remnux/jsdetox  
 # needed to create forensics docker images  
 docker pull ubuntu:14.04  
+# needed to create SecurityOnion docker image
+docker pull ubuntu:16.04  
 ```
 
 
