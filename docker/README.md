@@ -110,7 +110,7 @@ sudo gpasswd -a ${USER} docker
 sudo service docker restart
 sudo reboot
 ```
-WARNING:  http://zacharykeeton.com/Linux_Privilege-Escalation-with-Docker/
+WARNING:  https://fosterelli.co/privilege-escalation-via-docker.html  
 
 **Build Powershell**  
 https://channel9.msdn.com/Shows/msftazure/Run-PowerShell-Natively-on-Linux-with-Docker
